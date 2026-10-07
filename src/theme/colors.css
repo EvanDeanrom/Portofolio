@@ -1,0 +1,76 @@
+/**
+ * ============================================================
+ *  FILE PENGATUR WARNA PORTOFOLIO
+ *  Lokasi: src/theme/colors.css
+ *
+ *  Cara pakai:
+ *  1. Ubah nilai HEX di bawah (contoh: #4f46e5)
+ *  2. Simpan — UI otomatis ikut berubah (btn-primary, text-primary, dll)
+ *  3. Tidak perlu mengedit komponen di components/portofolio/
+ *
+ *  Tip:
+ *  - --color-primary          = warna utama (tombol, highlight)
+ *  - --color-primary-content  = teks di atas warna primary (biasanya putih)
+ *  - --color-base-100         = background halaman
+ *  - --color-base-content     = warna teks utama
+ * ============================================================
+ */
+
+/* ---------- LIGHT MODE (default DaisyUI, bisa diganti) ---------- */
+[data-theme="light"],
+:root {
+  /* Latar & Teks (Light - 80s Retro Daytime) */
+  --color-base-100: #ffdeeb;         /* Soft pastel pink / flamingo sunset */
+  --color-base-200: #ffffff;         /* Pure white for clean contrast */
+  --color-base-300: #e2e8f0;         /* Soft border lines */
+  --color-base-content: #22003c;     /* Deep retro violet/purple instead of boring black */
+
+  /* Brand (Vibrant 80s Pop) */
+  --color-primary: #ff007f;          /* Neon Hot Pink */
+  --color-primary-content: #ffffff;
+  --color-secondary: #00f0ff;        /* Electric Cyan / Laser Blue */
+  --color-secondary-content: #22003c;
+  --color-accent: #ffb700;           /* Arcade Yellow / Sunset Orange */
+  --color-accent-content: #22003c;
+  --color-neutral: #3d0066;          /* Synthwave deep purple shadow */
+  --color-neutral-content: #ffffff;
+
+  /* Status (80s Neon Alert Palette) */
+  --color-info: #00a8ff;             /* Neon Blue */
+  --color-info-content: #ffffff;
+  --color-success: #39ff14;          /* Cyber/Neon Lime Green */
+  --color-success-content: #22003c;
+  --color-warning: #ffff00;          /* Laser Yellow */
+  --color-warning-content: #22003c;
+  --color-error: #ff3333;            /* Neon Red */
+  --color-error-content: #ffffff;
+}
+
+/* ---------- DARK MODE (80s Outrun / Arcade Night) ---------- */
+[data-theme="dark"] {
+  /* Latar & Teks (Dark - Cyberpunk Midnight) */
+  --color-base-100: #0d0118;         /* Deepest midnight grid violet */
+  --color-base-200: #1a082e;         /* Neon-infused dark purple for cards/containers */
+  --color-base-300: #ff007f;         /* Hot Pink borders for that "glowing grid" look */
+  --color-base-content: #00f0ff;     /* Glowing Cyber Cyan for highly readable retro text */
+
+  /* Brand (Aesthetic Neon Glow) */
+  --color-primary: #ff007f;          /* Neon Hot Pink (Keeps its punch) */
+  --color-primary-content: #ffffff;
+  --color-secondary: #00f0ff;        /* Electric Cyan Glow */
+  --color-secondary-content: #0d0118;
+  --color-accent: #bd00ff;           /* Laser Purple / Rad Violet */
+  --color-accent-content: #ffffff;
+  --color-neutral: #1a082e;
+  --color-neutral-content: #00f0ff;
+
+  /* Status (Dark Mode Glow) */
+  --color-info: #00a8ff;
+  --color-info-content: #0d0118;
+  --color-success: #39ff14;          /* Radioactive Green */
+  --color-success-content: #0d0118;
+  --color-warning: #ffb700;          /* Golden hour orange-yellow */
+  --color-warning-content: #0d0118;
+  --color-error: #ff0055;
+  --color-error-content: #ffffff;
+}
